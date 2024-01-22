@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <heda>
+        <meta charset="UTF-8">
+        <title>3.테이블태그</title>
+        <!--
+            날짜 : 2024.01.22
+            이름 : 김준형
+            내용 : 테이블 태그 실습하기
+        -->
+    </heda>
+    <body>
+        <h3>테이블 태그</h3>
+        <caption>User 목록</caption>
+
+        <table border="1">
+            <tr><!--Table Row-->
+                <th>아이디</th> <!--Table Header-->
+                <th>이름</th> 
+                <th>휴대폰</th>
+                <th>나이</th>
+            </tr>
+            <tr>
+                <td>a101</td> <!--Table Data-->
+                <td>김유신</td>
+                <td>010-1234-1001</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>a102</td>
+                <td>김춘추</td>
+                <td>010-1234-1002</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>a103</td>
+                <td>장보고</td>
+                <td>010-1234-1003</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>a104</td>
+                <td>강감찬</td>
+                <td>010-1234-1004</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>a105</td>
+                <td>이순신</td>
+                <td>010-1234-1005</td>
+                <td>24</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <caption>테이블 셀병합</caption>
+            <tr>
+                <td colspan="2">1X1</td> 
+                <td rowspan="2">1X2</td>
+                <td>1X3</td>
+                <td>1X4</td>
+                <td rowspan="4">1X5</td>
+            </tr>
+            <tr>
+                <td>2X1</td>
+                <td>2X2</td>
+                <td>2X4</td>
+            </tr>
+            <tr>
+                <td>3X1</td>
+                <td>3X2</td>
+                <td>3X3</td>
+                <td>3X4</td>
+                <td>3X5</td>
+            </tr>
+            <tr>
+                <td>4X1</td>
+                <td>4X2</td>
+                <td>4X3</td>
+                <td>4X4</td>
+                <td>4X5</td>
+            </tr>
+            <tr>
+                <td rowspan="5">5X1</td>
+                <td>5X2</td>
+                <td>5X3</td>
+                <td>5X4</td>
+                <td>5X5</td>
+            </tr>
+        </table>
+    </body>
+</html>
