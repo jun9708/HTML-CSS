@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!--
+            날짜 : 2024.01.23
+            이름 : 김준형
+            내용 : CSS 기본선택자 실습
+        -->
+        
+        <style>
+            /* 자식선택자 */
+            body > h3 {
+                color: orange;
+            }
+            div > h3{
+                color: blue;
+            }
+            .text1 > i{
+                color: green;
+            }
+            /* 후손선택자 */
+            .text1 b {
+                background-color: yellow;
+            }
+            .text2 b {
+                background-color: green;
+            }
+            /* 형제 선택자 */
+            #seoul + li{
+                color:orange;
+            }
+            #seoul ~ li{
+                background-color:skyblue;
+            }
+
+        </style>
+
+</head>
+<body>
+    <h3>2.CSS 자손선택자</h3>
+    <div>
+        <h3>애국가</h3>
+        <p class="text1">
+             동해물과 백두산이 마르고 닳도록<br>
+            하느님이 보우하사 우리나라 만세<br>
+            <i>
+             무궁화 삼천리 화려강산<br>
+             <b>대한사람</b> 대한으로 길이보전하세
+            </i>
+        </p>
+        <p class="text2">
+            동해물과 백두산이 마르고 닳도록<br>
+           하느님이 보우하사 우리나라 만세<br>
+           <i>
+            무궁화 삼천리 화려강산<br>
+            <b>대한사람</b> 대한으로 길이보전하세
+           </i>
+       </p>
+    </div>
+
+    <ul>
+        <li id="seoul">서울</li>
+        <li>대전</li>
+        <li>대구</li>
+        <li>부산</li>
+        <li>광주</li>
+    </ul>
+</body>
+</html>
