@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팜스토리</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* 서브공통 */
+        #sub {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+        #sub > div{
+            position: relative;
+            width: 100%;
+            height: 184px;
+            background-image: url(../images/sub_top_bg.jpg);
+        }
+
+        #sub > div > img {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+        }
+
+        #sub > .bg {
+            width: 100%;
+            height: 184px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        /*세션구역*/
+        #sub > section {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        /*세션구역-어사이드*/
+        #sub > section > aside {
+            float: left;
+            width: 180px;
+            height: 650px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        #sub > section > aside > img {
+            margin: 16px;
+        }
+
+        #sub > section > aside > ul{
+            width: 175px;
+            height: 233px;
+            background-image: url(../images/sub_aside_bg_lnb.png);
+            padding-top: 26px;
+            box-sizing: border-box;
+        }
+
+        /*호버구역*/
+        #sub > section > aside > ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        }
+        #sub > section > aside > ul li:nth-child(1) a {
+        background-image: url('../images/sub_cate3_lnb1_ov.png');
+        }
+        #sub > section > aside > ul li:nth-child(2) a {
+        background-image: url('../images/sub_cate3_lnb2_ov.png');
+        }
+        #sub > section > aside > ul li:nth-child(3) a {
+        background-image: url('../images/sub_cate3_lnb3_ov.png');
+        }
+      
+        
+
+        /*세션구역-아티클*/
+        #sub > section > article {
+            float: left;
+            width: 800px;
+            height: 650px;
+            padding-left: 40px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        #sub > section > article > nav{
+            position: relative;
+            float: left;
+            width: 100%;
+            height: 72px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid green;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+        #sub > section > article > nav > p {
+            position: absolute;
+            right: 0;
+            bottom: 4px;
+            color: #8c8c8c;
+            padding-left: 20px;
+            box-sizing: border-box;
+            background-image: url(../images//sub_page_nav_ico.gif);
+            background-repeat: no-repeat;
+            background-position: 10px;
+        }
+        #sub > section > article > nav > p >em {
+            font-weight: bold;
+            color: #91BA15;
+        }
+        #sub > section > article > nav > img{
+            position: absolute;
+            left: 0;
+            bottom: 4px;
+        } 
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="#" class="logo"><img src="../images/logo.png" alt="로고"></a>
+            <p>
+                <a href="#">HOME</a>|
+                <a href="#">로그인</a>|
+                <a href="#">회원가입</a>|
+                <a href="#">관리자</a>|
+                <a href="#">고객센터</a>
+            </p>
+
+            <img src="../images/head_txt_img.png" alt="3만원이상 무료배송/팜카드 10%적립">
+
+            <ul class="gnb">
+                <li><a href="#">팜스토리소개</a></li>
+                <li>
+                    <a href="#">장보기</a>
+                    <img src="../images/head_menu_badge.png" alt="30%">
+                </li>
+                <li><a href="#">농작물이야기</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">커뮤니티</a></li>
+            </ul>
+
+        </header>
+        <main>
+            <div id="sub" class="introduction">
+                <div class="bg">
+                    <img src="../images/sub_top_tit3.png" alt="CROP TALK">
+                </div>
+                <section>
+                    <!--왼쪽 농작물이야기 카테고리 배너-->
+                    <aside>
+                        <img src="../images/sub_aside_cate3_tit.png" alt="농작물이야기">
+                        <ul>
+                            <li><a href="./story.html">농작물이야기</a></li>
+                            <li><a href="./grow.html">텃밭가꾸기</a></li>
+                            <li><a href="./school.html">귀농학교</a></li>
+                        </ul>
+                    </aside>
+                    <article class="content">
+                        <nav><img src="../images/sub_nav_tit_cate3_tit1.png" alt="농작물 이야기">
+                            <p>HoME > 농작물이야기 > <em> 농작물이야기</em></p>
+                        </nav>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <img src="../images/footer_logo.png" alt="로고">
+            <p>
+                (주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-팜스토리구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호<br>
+                등록번호 팜스토리01234 (2013.04.01) / 발행인 : 홍길동<br>
+                대표 : 김준형 / 이메일 : email@mail.mail / 전화 : 01) 234-5678 / 경기도 성남시 잘한다구 신난다동 345<br>
+                <span>Copyright ⓒ김준형 All rights reserved.</span><br>
+            </p>
+
+
+        </footer>
+    </div>
+</body>
+</html>
